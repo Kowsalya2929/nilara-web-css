@@ -135,10 +135,12 @@ nav .nav_icons {
     background-color: whitesmoke;
     border: none;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .home11 button:hover {
     background-color: rgba(37, 159, 37, 0.562);
+    box-shadow: 3px 3px 5px rgba(91, 130, 91, 0.562);
     border: none;
 }
 
@@ -164,7 +166,7 @@ nav .nav_icons {
     margin-left: 70px;
     border-radius: 20% 20% 0 0;
 }
-
+ 
 @media (max-width:600px) {
     header .header_signup {
         font-size: 10px;
@@ -191,15 +193,56 @@ nav .nav_icons {
         font-size: 20px;
     }
     .home_section {
+        height: auto;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        height: 100%;
-        width: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: rgba(91, 130, 91, 0.562);
     }
     .home11 {
-        margin: 300px auto 0;
+        margin: 180px auto 0px;
     }
-}
+    .home11 h2 {
+        text-transform: uppercase;
+        font-size: larger;
+        text-align: center; 
+        font-weight:normal;
+    }
+
+    .home11 h3 {
+        text-transform: uppercase;
+        font-size: larger;
+        text-align: center;
+        margin-top: -10px;
+        font-weight: normal;
+    }
+    .home11 button {
+        padding: 15px;
+        font-size: 15px;
+        background-color: whitesmoke;
+        border: none;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    .home12 .home_round {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-top: -250px;
+        margin-left: 280px;
+        background-color: whitesmoke;
+    }
+
+    .home12 img {
+        width: 250px;
+        height: 150px;
+        margin-left: 260px;
+        border-radius: 20% 20% 0 0;
+    }
+} 
 
 @media (min-width:601px) and (max-width:769px)  {
     nav .nav_links {
