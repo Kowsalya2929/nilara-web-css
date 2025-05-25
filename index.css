@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid gainsboro;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(91, 130, 91, 0.562);
+}
+
+header .header_signup {
+    background-color: rgba(91, 130, 91, 0.562);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: small;
+    word-spacing: 5px;
+    font-weight:lighter;
+    padding: 10px 0;
+}
+
+header .header_signup a {
+    text-decoration: none;
+    color: green;
+}
+
+nav .nav_menu {
+    display: none;
+}
+
+nav .nav_img {
+    height: 100px;
+    width: 200px;
+}
+
+nav div i {
+    font-size: 20px;
+}
+
+nav div i:hover {
+    color: rgba(37, 159, 37, 0.562);
+}
+
+nav .nav_links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+nav .nav_links li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size:large;
+}
+
+li a {
+    position: relative;
+}
+
+li a::after {
+    position: absolute;
+    content: "";
+    height: 1.5px;
+    width: 0%;
+    bottom: -2px;
+    left: 0;
+    background-color: rgba(37, 159, 37, 0.562);
+    transition: width 0.3s ease-in-out;
+}
+
+nav .nav_links li a:hover {
+    color: rgba(37, 159, 37, 0.562);
+}
+
+nav .nav_links li a:hover::after {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+nav .nav_icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.home_section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 40px;
+    background-color: rgba(91, 130, 91, 0.562);
+}
+
+.home11 , .home12 {
+    margin-top: 300px;
+    margin-right: 260px;
+}
+
+.home11 h2 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: "Dancing Script";
+    text-align: center; 
+    font-weight:normal;
+}
+
+.home11 h3 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-family: "Dancing Script";
+    text-align: center;
+    font-weight: normal;
+}
+
+.home11 button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: none;
+    margin-left: 40px;
+}
+
+.home11 button:hover {
+    background-color: rgba(37, 159, 37, 0.562);
+    border: none;
+}
+
+.home_line {
+    height: 2px;
+    width: 200px;
+    background-color: whitesmoke;
+}
+
+.home12 .home_round {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: -90px;
+    margin-left: 100px;
+    background-color: whitesmoke;
+}
+
+.home12 img {
+    width: 500px;
+    height: 300px;
+    margin-top: -780px;
+    margin-left: 70px;
+    border-radius: 20% 20% 0 0;
+}
+
+@media (max-width:600px) {
+    header .header_signup {
+        font-size: 10px;
+        word-spacing: 2px;
+    }
+    nav {
+        padding: 0 10px;
+    }
+    nav .nav_links {
+        display: none;
+    }
+    nav .nav_icons {
+        display: flex;
+        gap: 10px;
+    }
+    nav .nav_menu {
+        display: block;
+    }
+    nav .nav_img {
+        height: 80px;
+        width: 130px;
+    }
+    nav .nav_icons i {
+        font-size: 20px;
+    }
+    .home_section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100vh;
+    }
+    .home11 {
+        margin: 300px auto 0;
+    }
+}
+
+@media (min-width:601px) and (max-width:769px)  {
+    nav .nav_links {
+        display: flex;
+        gap: 15px;
+    }
+    nav .nav_icons {
+        display: flex;
+        gap: 10px;
+    }
+    .home_section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-left: 40px;
+        background-color: rgba(91, 130, 91, 0.562);
+    }
+
+    .home11 , .home12 {
+        margin-top: 300px;
+        margin-right: 40px;
+    }
+
+    .home11 h2 {
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-family: "Dancing Script";
+        text-align: center; 
+        font-weight:normal;
+    }
+
+    .home11 h3 {
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-family: "Dancing Script";
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .home11 button {
+        padding: 20px;
+        font-size: 20px;
+        background-color: whitesmoke;
+        border: none;
+        margin-left: 40px;
+    }
+
+    .home11 button:hover {
+        background-color: rgba(37, 159, 37, 0.562);
+        border: none;
+    }
+
+    .home_line {
+        height: 2px;
+        width: 200px;
+        background-color: whitesmoke;
+    }
+
+    .home12 .home_round {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+    }
+
+    .home12 img {
+        width: 500px;
+        height: 300px;
+        border-radius: 20% 20% 0 0;
+    }
+}
+
+@media (min-width:770px) and (max-width:1024px) {
+    nav .nav_links {
+        display: flex;
+        gap: 15px;
+    }
+    nav .nav_icons {
+        display: flex;
+        gap: 10px;
+    }
+    .home_section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-left: 40px;
+        background-color: rgba(91, 130, 91, 0.562);
+    }
+
+    .home11 , .home12 {
+        margin-top: 300px;
+        margin-right: 130px;
+    }
+
+    .home11 h2 {
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-family: "Dancing Script";
+        text-align: center; 
+        font-weight:normal;
+    }
+
+    .home11 h3 {
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-family: "Dancing Script";
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .home11 button {
+        padding: 20px;
+        font-size: 20px;
+        background-color: whitesmoke;
+        border: none;
+        margin-left: 40px;
+    }
+
+    .home11 button:hover {
+        background-color: rgba(37, 159, 37, 0.562);
+        border: none;
+    }
+
+    .home_line {
+        height: 2px;
+        width: 200px;
+        background-color: whitesmoke;
+    }
+
+    .home12 .home_round {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+    }
+
+    .home12 img {
+        width: 500px;
+        height: 300px;
+        border-radius: 20% 20% 0 0;
+    }
+}
+
