@@ -166,6 +166,23 @@ footer {
     color: white;
 }
 
+/* all dress type */
+
+.icon_pm i {
+    padding: 10px;
+    border-radius: 20%;
+    color: white;
+    cursor: pointer;
+}
+
+.icon_pm {
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
 h2 {
     text-align: center;
     text-transform: capitalize;
@@ -203,7 +220,7 @@ h2 {
 .human_dress p {
     text-align: justify;
     margin-bottom: 10px;
-    font-size: small;
+    font-size: 15px;
 }
 
 .human_dress h3 {
@@ -214,6 +231,7 @@ h2 {
 
 .human_dress h4 {
     color: gray;
+    margin-bottom: -10px;
 }
 
 .btn_dress {
