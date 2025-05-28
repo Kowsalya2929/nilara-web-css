@@ -3,63 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping E-commerce Web Application</title>
-    <link rel="icon" href="images/logo_nilara.png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>nilara</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_nilara.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
 
     <!-- header -->
 
     <header>
-        <div class="header_signup"><a href="#">sign up</a> for a massive discount</div>
+        <a href="#home"><img class="logo_nilara" src="images/logo_nilara.png" alt="logo_nilara"></a>
         <nav>
-            <div class="nav_menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <a href="#home"><img class="nav_img" src="images/logo_nilara.png" alt="logo_nilara"></a>
-            <div class="nav_links">
-                <li><a href="index.html" class="active">home</a></li>
-                <li><a href="#new">new</a></li>
-                <li><a href="#shop">shop</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </div>
-            <div class="nav_icons">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-suitcase"></i>
-                <i class="fa-solid fa-user"></i>
-            </div>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#men">men's</a></li>
+                <li><a href="#women">women's</a></li>
+                <li><a href="#kids">kids</a></li>
+                <li><a href="#pages">pages <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#aboutus">about us</a></li>
+                    <li><a href="#products">products</a></li>
+                    <li><a href="#singleProduct">single product</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                </li>
+                <li><a href="#features">features <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#home">feature 1</a></li>
+                    <li><a href="#home">feature 2</a></li>
+                    <li><a href="#home">feature 3</a></li>
+                    <li><a href="#home">feature 4</a></li>
+                </ul>
+                </li>
+                <li><a href="#explore">explore</a></li>
+            </ul>
         </nav>
+        <div class="menu">
+            <i class="bi bi-list"></i> 
+        </div>
     </header>
 
-    <!-- home page -->
+    <!-- kids -->
+    <h2>kid's latest</h2>
+    <section id="kids" class="human">
 
-    <section class="home_section">
-        <div class="home11">
-            <p></p>
-            <h2>new</h2><br><br>
-            <h3>collection</h3><br><br>
-            <div class="home_line"></div><br><br>
-            <button>shop now </button>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress17/dress171.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress17/dress172.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
         </div>
-        <div class="home12">
-            <img src="images/bg1.png" alt="bg1">
+        <div class="human_dress">
+            <div>
+                <img src="images/dress18/dress181.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress18/dress182.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress18/dress183.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress18/dress184.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress18/dress185.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress19/dress191.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress19/dress192.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress20/dress201.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress20/dress202.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress20/dress203.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress20/dress204.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress21/dress211.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress21/dress212.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress21/dress213.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress21/dress214.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress21/dress215.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress22/dress221.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress22/dress222.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress22/dress223.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress22/dress224.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress23/dress231.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress23/dress232.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress23/dress233.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress24/dress241.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress24/dress242.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress24/dress243.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>kids dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
         </div>
     </section>
 
-    <!-- offer page -->
-
-    <section class="feature_section">
-        <img src="images/offer/offer1.png" alt="offer1">
-        <img src="images/offer/offer2.png" alt="offer2">
-        <img src="images/offer/offer3.png" alt="offer3">
-        <img src="images/offer/offer4.png" alt="offer4">
-        <img src="images/offer/offer5.png" alt="offer5">
-        <img src="images/offer/offer6.png" alt="offer6">
+    <!-- womens -->
+    <h2>women's latest</h2>
+    <section id="women" class="human">
+        <div class="human_dress">
+            <div>
+                <img src="images/dress1/image1.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress1/court1.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress1/hand_bag1.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress1/pant1.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress1/show1.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress1/top1.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>Women dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress2/dress21.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress2/dress22.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress2/dress23.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>Women dress 2</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress3/dress32.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress3/dress33.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress3/dress34.jpg" height="100px" width="97px" alt="">
+                    <video controls height="100px" width="97px">
+                        <source type="video/mp4" src="images/dress3/dress31.mp4">
+                    </video>
+                </div>
+            </div>
+            <h3>Women dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress4/dress42.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress4/dress43.jpg" height="100px" width="97px" alt="">
+                    <video controls height="100px" width="97px">
+                        <source type="video/mp4" src="images/dress4/dress41.mp4">
+                    </video>
+                </div>
+            </div>
+            <h3>Women dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress5/dress52.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress5/dress53.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress5/dress54.jpg" height="100px" width="97px" alt="">
+                    <video controls height="100px" width="97px">
+                        <source type="video/mp4" src="images/dress5/dress51.mp4">
+                    </video>
+                </div>
+            </div>
+            <h3>Women dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress6/dress62.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <video controls height="100px" width="97px">
+                        <source type="video/mp4" src="images/dress6/dress61.mp4">
+                    </video>
+                </div>
+            </div>
+            <h3>Women dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress7/dress71.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress7/dress72.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress7/dress73.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>Women dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress8/dress81.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress8/dress82.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress8/dress83.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress8/dress84.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress8/dress85.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>Women dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
     </section>
+
+    <!-- men -->
+    <h2>men's latest</h2>
+    <section id="men" class="human">
+        
+        <div class="human_dress">
+            <div>
+                <img src="images/dress9/dress91.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress9/dress92.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress9/dress93.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress10/dress103.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress10/dress102.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress10/dress101.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress10/dress104.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress11/dress111.jpg" alt="" height="500px" width="300px">
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress12/dress121.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress12/dress122.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress12/dress123.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress12/dress124.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress13/dress131.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress13/dress132.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress14/dress141.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress14/dress142.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress14/dress143.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress15/dress151.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress15/dress152.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress15/dress153.jpg" height="100px" width="97px" alt="">
+                    <img src="images/dress15/dress154.jpg" height="100px" width="97px" alt="">
+                </div>
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+        <div class="human_dress">
+            <div>
+                <img src="images/dress16/dress161.jpg" alt="" height="500px" width="300px">
+                <div class="all_img">
+                    <img src="images/dress16/dress162.jpg" height="100px" width="97px" alt="">
+                    <video controls height="100px" width="100px">
+                        <source type="video/mp4" src="images/dress16/dress163.mp4">
+                    </video>
+                </div>
+            </div>
+            <h3>men dress 1</h3><br>
+            <h4>$2000.00</h4><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nihil eum accusantium aliquid officia similique, ducimus perferendis enim minus dignissimos unde consequatur ipsa facilis, dicta ratione quod, perspiciatis optio.</p>
+            <button class="btn_dress">Add to cart</button>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <section class="footer_section1">
+            <div class="s1_div1">
+                <a href="#home"><img class="logo_nilara" src="images/logo_nilara.png" alt="logo_nilara"></a>
+                <p>Kovaipudur, Coimbatore, 641042.</p>
+                <a href="mailto:kowsalyal0303@gmail.com" style="text-transform: lowercase;margin-top: 4px; text-decoration-line: underline;">kowsalyal0303@gmail.com</a>
+                <a href="tel:+91 63838 51451" style="text-decoration-line: underline;">+91 63838 51451</a>
+            </div>
+            <div class="s1_div2">
+                <h4>shopping & categories</h4><br>
+                <a href="#men">men's shopping</a>
+                <a href="#women">women's shopping</a>
+                <a href="#kids">kid's shopping</a>
+            </div>
+            <div class="s1_div3">
+                <h4>Useful links</h4><br>
+                <a href="#home">Homepage</a>
+                <a href="#about">About us</a>
+                <a href="#help">Help</a>
+                <a href="#contact">Contact us</a>
+            </div>
+            <div class="s1_div4">
+                <h4>help & information</h4><br>
+                <a href="#">Your Acount</a>
+                <a href="#">FAQ's</a>
+                <a href="#">privacy policy</a>
+                <a href="#">terms & conditions</a>
+            </div>
+        </section>
+        <section class="footer_section2">
+            <hr>
+            <div class="s2_div1">
+                <p>All Rights Reserved &copy; nilara 2025</p>
+                <p>designed & developed by Kowsalya</p>
+                <p>Training and Mentorship by apex i sys</p>
+            </div>
+            <div class="s2_div2">
+                <a href="#home"><i class="bi bi-facebook"></i></a>
+                <a href="#home"></a><i class="bi bi-twitter"></i></a>
+                <a href="#home"></a><i class="bi bi-linkedin"></i></a>
+            </div>
+        </section>
+    </footer>
+
+    
 
 </body>
 </html>
