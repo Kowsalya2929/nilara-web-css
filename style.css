@@ -209,11 +209,11 @@ h2 {
 }
 
 .human_dress:hover, .all_img img:hover, .contact11:hover {
-    box-shadow: 2px 2px 3px gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .all_img img {
-    border: 0.5px solid gray;
+    border: 0.3px solid gray;
     cursor: pointer;
 }
 
@@ -357,7 +357,7 @@ summary {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 0.3px solid gray;
+    border: 0.1px solid gray;
     padding: 10px 40px;
     border-radius: 20px;
     width: 100%;
@@ -385,6 +385,7 @@ summary {
 
 .contact11 form input:focus, .contact11 form textarea:focus {
     background-color: rgb(201, 201, 201);
+    border: 0.2px solid gray;
 }
 
 .contact11 form .btns {
@@ -404,6 +405,58 @@ summary {
 .contact11 form button:hover {
     background-color: gray;
     border: none;
+}
+
+/* signup */
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(120, 119, 119);
+    padding: 50px;
+    border-radius: 20px;
+    gap: 20px;
+    width: 500px;
+}
+
+.signup form input{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.signup .img_feel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -30px 0 -20px;
+    color: white;
+}
+
+.signup form button {
+    padding: 20px 30px;
+    background-color: pink;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.signup form a {
+    color: white;
+    text-align: right;
+}
+
+.signup form a:hover {
+    color: rgb(224, 131, 200);
 }
 
 @media (max-width:600px) {
@@ -491,6 +544,12 @@ summary {
         justify-content: space-between;
         flex-direction: column;
         gap: 15px;
+    }
+
+    /* signup */
+
+    .signup form {
+        width: 300px;
     }
     
 }
