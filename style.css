@@ -208,7 +208,7 @@ h2 {
     width: 350px;
 }
 
-.human_dress:hover, .all_img img:hover {
+.human_dress:hover, .all_img img:hover, .contact11:hover {
     box-shadow: 2px 2px 3px gray;
 }
 
@@ -242,6 +242,7 @@ h2 {
     font-size: 17px;
     margin: 10px;
     text-transform: capitalize;
+    border-radius: 10px;
 }
 
 .btn_dress:hover {
@@ -310,12 +311,100 @@ dt {
     font-weight: bold;
 }
 
-::selection {
-    background-color: yellow;
-    color: black;
+/* faq's */
+
+.faq {
+    display: flex;
+    flex-direction: column;
 }
 
+.faq11 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: xx-large;
+    background-image: url(images/bg4.jpg);
+    opacity: 0.3;
+}
 
+.faq12 {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+    margin: 10px auto 40px;
+}
+
+summary {
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* contact */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 30px;
+}
+
+.contact11 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 0.3px solid gray;
+    padding: 10px 40px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.contact11 form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact12 {
+    width: 100%;
+}
+
+.contact12 iframe {
+    width: 100%;
+    height: 80%;
+}
+
+.contact11 form input, .contact11 form textarea{
+    padding: 15px;
+    border: 0.2px solid gray;
+}
+
+.contact11 form input:focus, .contact11 form textarea:focus {
+    background-color: rgb(201, 201, 201);
+}
+
+.contact11 form .btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.contact11 form button {
+    padding: 15px 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.contact11 form button:hover {
+    background-color: gray;
+    border: none;
+}
 
 @media (max-width:600px) {
 
@@ -361,15 +450,49 @@ dt {
 
     /* terms and conditions */
 
+    .terms11 {
+        font-size: x-large;
+        text-align: center;
+    }
+
     .terms12 {
         margin: 40px 20px;
     }
 
     /* privacy policy */
 
+    .privacy11 {
+        font-size: x-large;
+        text-align: center;
+    }
+
     .privacy12 {
         margin: 40px 20px;
     }
+
+    /* faq */
+
+    .faq11 {
+        font-size: x-large;
+        text-align: center;
+    }
+
+    /* contact  */
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .contact11 form .btns {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
 }
 
 @media (min-width:601px) and (max-width:769px) {
@@ -421,6 +544,19 @@ dt {
     .privacy12 {
         margin: 40px 80px;
     }
+
+    /* contact  */
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .contact12 iframe {
+        width: 100%;
+        height: 400px;
+    }
 }
 
 @media (min-width:770px) and (max-width:1025px) {
@@ -468,5 +604,18 @@ dt {
 
     .privacy12 {
         margin: 40px 100px;
+    }
+
+    /* contact  */
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .contact12 iframe {
+        width: 100%;
+        height: 400px;
     }
 }
