@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nilara</title>
-    <link rel="icon" type="image/x-icon" href="images/logo_nilara.png">
+    <title>Nilara Web Application</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
@@ -12,30 +11,27 @@
 
     <!-- header -->
 
-    <header>
-        <a href="#home"><img class="logo_nilara" src="images/logo_nilara.png" alt="logo_nilara"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="index.html">men's</a></li>
-                <li><a href="index.html">women's</a></li>
-                <li><a href="index.html">kids</a></li>
-                <li><a href="index.html">pages <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                    <li><a href="index.html">about us</a></li>
-                    <li><a href="index.html">products</a></li>
-                    <li><a href="index.html">single product</a></li>
-                    <li><a href="index.html">contact</a></li>
-                </ul>
-                </li>
-                <li><a href="signUp.html">Sign up</a></li>
-                <li><a href="explore.html">explore</a></li>
-            </ul>
-        </nav>
-        <div class="menu">
-            <i class="bi bi-list"></i> 
+    <div class="header">
+        <div class="logo">
+            <a href="">Nilara</a>
         </div>
-    </header>
+        <div class="menu">
+            <a href="index.html" class="item1">Home</a>
+            <a href="index.html" class="item">New arrivals</a>
+            <a href="index.html" class="item">Products</a>
+            <a href="index.html" class="item">About</a>
+            <a href="index.html" class="item">Contact</a>
+        </div>
+        <div class="icons">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-chat-square-heart"></i>
+            <i class="bi bi-bag-plus-fill"></i>
+            <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="mbl_menu">
+            <i class="bi bi-list"></i>
+        </div>
+    </div>
 
     <!-- privacy and policy -->
 
@@ -66,50 +62,26 @@
         </div>
     </section>
 
-    <!-- Contact -->
-     
-    <h2>Contact Us</h2>
-    <section id="contact" class="contact">
-        <div class="contact11">
-            <h2>Have a question?</h2>
-            <form action="" >
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email*">
-                <input type="number" placeholder="Phone Number">
-                <textarea name="" placeholder="Have a Question? We Will Answer!*" id="" rows="5"></textarea>
-                <div class="btns">
-                    <button type="submit">Submit</button> 
-                    <button type="reset">Undo</button>
-                </div>
-            </form>
-        </div>
-        <div class="contact12">
-            <h2>Our Location</h2>
-            <iframe width="auto" height="auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.283576472903!2d76.96571787480858!3d11.01733748914643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8596e0b4416cf%3A0x68130239ad3e138a!2sApex%20I%20Sys%20-%20Full%20stack%20Development%20in%20Python%20Java%20DotNet%20MERN%20MEAN%20Stack%20%7C%20Data%20Science%20%7C%20UI%20%2FUX!5e0!3m2!1sen!2sin!4v1748494563349!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
     <!-- footer -->
 
     <footer>
         <section class="footer_section1">
             <div class="s1_div1">
-                <a href="index.html"><img class="logo_nilara" src="images/logo_nilara.png" alt="logo_nilara"></a>
+                <a href="index.html" style="font-weight: bold;font-size: larger;">Nilara Collections</a>
                 <p>Kovaipudur, Coimbatore, 641042.</p>
                 <a href="mailto:kowsalyal0303@gmail.com" style="text-transform: lowercase;margin-top: 4px; text-decoration-line: underline;">kowsalyal0303@gmail.com</a>
                 <a href="tel:+91 63838 51451" style="text-decoration-line: underline;">+91 63838 51451</a>
             </div>
             <div class="s1_div2">
                 <h4>shopping & categories</h4><br>
-                <a href="index.html">men's shopping</a>
-                <a href="index.html">women's shopping</a>
-                <a href="index.html">kid's shopping</a>
+                <a href="index.html">New Arrivals</a>
+                <a href="index.html">Products</a>
             </div>
             <div class="s1_div3">
                 <h4>Useful links</h4><br>
-                <a href="#home">Homepage</a>
-                <a href="#about">About us</a>
-                <a href="#help">Help</a>
+                <a href="index.html">Homepage</a>
+                <a href="index.html">About us</a>
+                <a href="index.html">Help</a>
                 <a href="#contact">Contact us</a>
             </div>
             <div class="s1_div4">
@@ -121,16 +93,16 @@
             </div>
         </section>
         <section class="footer_section2">
-            <hr>
+            <hr style="color: black;">
             <div class="s2_div1">
                 <p>All Rights Reserved &copy; nilara 2025</p>
                 <p>designed & developed by Kowsalya</p>
                 <p>Training and Mentorship by apex i sys</p>
             </div>
             <div class="s2_div2">
-                <a href="index.html"><i class="bi bi-facebook"></i></a>
-                <a href="index.html"></a><i class="bi bi-twitter"></i></a>
-                <a href="index.html"></a><i class="bi bi-linkedin"></i></a>
+                <a href="#home"><i class="bi bi-facebook"></i></a>
+                <a href="#home"></a><i class="bi bi-twitter"></i></a>
+                <a href="#home"></a><i class="bi bi-linkedin"></i></a>
             </div>
         </section>
     </footer>
