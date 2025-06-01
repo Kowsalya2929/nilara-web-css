@@ -374,6 +374,7 @@
     overflow: hidden;
 }
 
+
 .top_products {
     display: flex;
     flex-direction: column;
@@ -415,8 +416,8 @@
 }
 
 .images_prod img:hover {
-    transform: rotate(360deg);
-    transition: 3s ease;
+    transform: rotateY(180deg);
+    transition: 2s ease-in-out;
 }
 
 .top_products h2 {
@@ -908,6 +909,20 @@ footer {
     text-transform: capitalize;
     width: 100%;
     border: 2px dotted rgb(185, 116, 127);
+    position: relative;
+}
+
+.above i{
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    color: rgb(185, 116, 127);
+    font-size: xx-large;
+}
+
+.above i:hover {
+    border-radius: 20px;
 }
 
 .footer_section2 {
