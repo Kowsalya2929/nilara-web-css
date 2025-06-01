@@ -748,7 +748,6 @@
     padding: 20px 30px;
     border-radius: 20px;
     width: 100%;
-    filter: drop-shadow(8px 8px 10px rgb(185, 116, 127));
 }
 
 .contact11:hover {
@@ -800,6 +799,103 @@
 
 .btns button:hover {
     background-color: white;
+}
+
+/* terms & conditions , privacy policy , faq's */
+
+.terms, .privacy , .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.terms11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/terms_conditions/terms.jpg);
+    opacity: 0.7;
+    width: 100%;
+    margin-top: 90px;
+    height: 400px;
+    object-fit: fill;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+.privacy11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/privacy_policy/privacy.jpg);
+    opacity: 0.7;
+    width: 100%;
+    margin-top: 90px;
+    height: 400px;
+    object-fit: fill;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+.faq11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/faqs/faq.jpg);
+    opacity: 0.7;
+    width: 100%;
+    margin-top: 90px;
+    height: 400px;
+    object-fit: fill;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+
+.terms12, .privacy12, .faq12 {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms12 h2, .privacy12 h2, .faq12 h2 {
+    text-align: center;
+    color: rgb(185, 116, 127);
+    font-size: xx-large;
+    margin-top: 40px;
+}
+
+dl {
+    margin: 80px auto;
+    border: 3px dotted pink;
+    padding: 20px;
+}
+
+dt {
+    font-weight: bold;
+    font-size: large;
+}
+
+dd {
+    text-indent: 45px;
+}
+
+.qa {
+    border: 2px dotted pink;
+    padding: 40px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+summary {
+    font-weight: bold;
+    font-size: large;
 }
 
 /* footer */
@@ -1057,6 +1153,18 @@ footer {
         gap: 20px;
     }
 
+    /* terms & conditions , privacy policy , faq's */
+
+    .terms11, .privacy11, .faq11 { 
+        text-align: center;
+        font-size: x-large;
+        margin-top: 100px;
+    }
+
+    .qa {
+        padding: 20px;
+    }
+
     /* footer */
 
     footer {
@@ -1177,6 +1285,11 @@ footer {
         align-items: center;
     }
 
+    /* terms & conditions and privacy policy */
+
+    .terms11, .privacy11, .faq11 { 
+        margin-top: 90px;
+    }
 
     /* footer */
 
@@ -1257,6 +1370,12 @@ footer {
     .about3 {
         font-size: 15px;
         margin-bottom: 20px;
+    }
+
+    /* terms & conditions and privacy policy */
+
+    .terms11, .privacy11, .faq11 { 
+        margin-top: 90px;
     }
 
     /* footer */
