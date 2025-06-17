@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Password - Nilara Web Application</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    
 </head>
 <body>
 
     <!-- Change Password -->
 
     <div class="changePass">
-        <form action="index.html">
+        <form onsubmit="verifyEmail(event)">
             <h2>OTP Verification & Change Password</h2>
-            <input type="text" placeholder="OTP">
-            <input type="password" placeholder="New Password" pattern="[A-za-z0-9-+@!~#$%^&*]{8}">
-            <input type="password" placeholder="New Correct password" pattern="[A-za-z0-9-+@!~#$%^&*]{8}">
+            <div class="i">
+                <input id="in1" type="text" pattern="[0-9A-Za-z]{1,1}" class="i1" maxlength="1" placeholder="-">
+                <input id="in2" type="text" pattern="[0-9A-Za-z]{1,1}" class="i1" maxlength="1" placeholder="-">
+                <input id="in3" type="text" pattern="[0-9A-Za-z]{1,1}" class="i1" maxlength="1" placeholder="-">
+                <input id="in4" type="text" pattern="[0-9A-Za-z]{1,1}" class="i1" maxlength="1" placeholder="-">
+                <input id="in5" type="text" pattern="[0-9A-Za-z]{1,1}" class="i1" maxlength="1" placeholder="-">
+                <input id="in6" type="text" pattern="[0-9A-Za-z]{1,1}" class="i1" maxlength="1" placeholder="-">
+            </div>
+            <div id="otp_error" style="text-align: center;color: red;text-indent: 10px;font-size: smaller;text-transform: capitalize;"></div>
+            <input  id="np" type="password" placeholder="New Password">
+            <div id="pass_error" style="color: red;text-indent: 10px;font-size: smaller;margin-top: -10px;text-transform: capitalize;"></div>
+            <input  id="ncp" type="password" placeholder="New Correct password">
+            <div id="cpass_error" style="color: red;text-indent: 10px;font-size: smaller;margin-top: -10px;text-transform: capitalize;"></div>
             <button type="submit">Change Password</button>
         </form>
     </div>

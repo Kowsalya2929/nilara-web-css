@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In - Nilara Web Application</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
     <!-- SignIn -->
 
     <div class="signin">
-        <form action="index.html">
+        <form autocomplete="on" onsubmit="signIn(event)">
             <h2>Sign In Form</h2>
-            <input type="email" placeholder="Email Address">
-            <input type="password" placeholder="Password" pattern="[A-za-z0-9-+@!~#$%^&*]{8}">
+            <input type="email" id="email" placeholder="Email Address">
+            <div id="email_error" style="text-indent: 10px;margin-top: -10px;font-size: small;color: red;"></div>
+            <input type="password" id="pass" placeholder="Password">
+            <div id="pass_error" style="text-indent: 10px;margin-top: -10px;font-size: small;color: red;"></div>
+            <div id="error" style="text-indent: 10px;margin-top: -10px;font-size: small;color: red;"></div>
             <button type="submit">Sign In</button>
-            <a href="signUp.html">Don't have an acoount!</a>
+            <a href="signUp.html">Don't have an account!</a>
             <a href="forgetPassword.html">Forget Password</a>
         </form>
     </div>

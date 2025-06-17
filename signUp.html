@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Nilara Web Application</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- defer means load our page last -->
 </head>
 <body>
 
     <!-- Signup -->
 
     <div class="signup">
-        <form action="index.html">
+        <form autocomplete="on" onsubmit="signUp(event)" id="form">
             <h2>Sign Up Form</h2>
-            <input type="text" placeholder="Username">
-            <input type="email" placeholder="Email Address">
-            <input type="number" placeholder="Phone Number">
-            <input type="password" placeholder="Password" pattern="[A-za-z0-9-+@!~#$%^&*]{8}">
-            <input type="password" placeholder="Correct password" pattern="[A-za-z0-9-+@!~#$%^&*]{8}">
-            <button type="submit">Sign Up</button>
-            <a href="signin.html">Already i have an acoount!</a>
+            <input type="text" id="name" placeholder="Username">
+            <div id="usernameError" style="color: red;text-indent: 10px;font-size: small;margin-top: -10px;"></div>
+            <input type="email" id="email" placeholder="Email Address">
+            <div id="emailError" style="color: red;text-indent: 10px;font-size: small;margin-top: -10px;"></div>
+            <input type="text" id="number" placeholder="Phone Number">
+            <div id="numError" style="color: red;text-indent: 10px;font-size: small;margin-top: -10px;"></div>
+            <input type="password" id="password" placeholder="Password" >
+            <div id="passError" style="color: red;text-indent: 10px;font-size: small;margin-top: -10px;"></div>
+            <input type="password" id="cpassword" placeholder="Correct password" >
+            <div id="cpassError" style="color: red;text-indent: 10px;font-size: small;margin-top: -10px;"></div>
+            <button type="submit" >Sign Up</button>
+            <a href="signin.html">Already i have an account!</a>
         </form>
     </div>
+
 </body>
 </html>
