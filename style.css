@@ -200,12 +200,13 @@ div.i {
 
 
 #search_box input{
-    padding: 10px;
+    padding: 15px;
     width: 80%;
     position: relative;
     right: -40px;
     background-color: rgb(254, 205, 213);
     border: none;
+    border-radius: 20px 0px 20px 20px;
     outline: 0;
 }
 
@@ -249,6 +250,7 @@ div.i {
     height: 15rem;
     width: 38rem;
     top: 350px;
+    right: 60px;
     background-color: rgb(197, 196, 196);
     border-radius: 30px 200px 10px 200px;
 }
@@ -889,10 +891,6 @@ div.i {
     width: 100%;
 }
 
-.contact11:hover {
-    background-color: pink;
-}
-
 .contact11 form {
     display: flex;
     flex-direction: column;
@@ -902,6 +900,9 @@ div.i {
 .contact11 form input, .contact11 form textarea {
     padding: 15px 10px;
     font-size: 15px;
+    outline: 0;
+    background-color: rgb(247, 201, 208);
+    border: none;
 }
 
 .contact11 form input:focus, .contact11 form textarea:focus {
@@ -931,13 +932,9 @@ div.i {
     padding: 15px 20px;
     border-radius: 20px;
     background-color: pink;
-    border: 2px solid palevioletred;
+    border: none;
     font-size: 15px;
     color: rgb(111, 7, 42);
-}
-
-.btns button:hover {
-    background-color: white;
 }
 
 /* terms & conditions , privacy policy , faq's */
@@ -1411,6 +1408,7 @@ footer {
         width: 15rem;
         position: relative;
         top: 140px;
+        right: 0px;
     }
     .pink_bg {
         height: 10rem;
@@ -1884,7 +1882,7 @@ footer {
         height: 23rem;
         width: 38rem;
         position: relative;
-        top: -280px; 
+        top: -250px; 
         left: 0px;       
     }
     .img_bg img {

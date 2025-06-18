@@ -267,6 +267,10 @@
                 email: v2,
             }
 
+            if(v3 == ""){
+                alert("Fill email is required");
+            }else {
+
             emailjs.send("service_tjmnu5p","template_qb31lpc",template_params)
             .then((res)=>{
                 alert("Your Message sended successfully! "  + v1)
@@ -277,6 +281,8 @@
             }).catch((err) => {
                 alert("Failed to send email" + JSON.stringify(err))
             });
+
+            }
         }
 
         //logout
