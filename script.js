@@ -100,6 +100,8 @@
 
             let hasError = false;
 
+            
+
             if(v1 === ""){
                 e1.innerText = "Fill email";
                 hasError = true;
@@ -108,7 +110,9 @@
                 hasError = true;
             }else{
                 e1.innerText = "";
-            }            
+            } 
+
+                    
 
             if(v1 === ""){
                 e2.innerText = "Fill password";
@@ -119,6 +123,8 @@
             }else{
                 e2.innerText = "";
             }
+
+            
             
 
             if(hasError){
@@ -130,7 +136,6 @@
         }
 
         //send otp to email for forget password
-
 
         function sendEmail(event){
 
@@ -155,25 +160,26 @@
                 hasError = true;
             }else{
                 e1.innerText = "";
+                 const template_params = {
+                    passcode: otp,
+                    time: expiry,
+                    email: v1,
+                }
+
+                emailjs.send("service_tjmnu5p","template_1nd086p",template_params)
+                .then((res) => {
+                    console.log(res)
+                    alert("OTP Sended Successfully to " + v1)
+                    localStorage.setItem("Otp",otp)
+                    localStorage.setItem("email",v1)
+                    window.location.href = "forgetverifyEmail.html";
+                    
+                }).catch((err) => {
+                    alert("Failed to send email" + JSON.stringify(err))
+                });
             }
 
-            const template_params = {
-                passcode: otp,
-                time: expiry,
-                email: v1,
-            }
-
-            emailjs.send("service_tjmnu5p","template_1nd086p",template_params)
-            .then((res) => {
-                console.log(res)
-                alert("OTP Sended Successfully to " + v1)
-                localStorage.setItem("Otp",otp)
-                localStorage.setItem("email",v1)
-                window.location.href = "forgetverifyEmail.html";
-                
-            }).catch((err) => {
-                alert("Failed to send email" + JSON.stringify(err))
-            });
+           
 
             if(hasError){
                 console.log("error in email submision")
@@ -273,5 +279,24 @@
                 alert("Failed to send email" + JSON.stringify(err))
             });
         }
+
+        //logout
+
+        function logout(event){
+
+            event.preventDefault()
+
+            const storedData = localStorage.getItem("User")
+
+            storedData.name= "";
+            storedData.email = "";
+            storedData.password = "";
+            storedData.cpassword = "";
+            storedData.number = "";
+
+            let currData = localStorage.setItem("User",JSON.stringify(storedData))
+            console.log(currData)
+        }
+
 
         
