@@ -23,9 +23,6 @@
             if(v1 === ""){
                 e1.innerText = "Fill name";
                 hasError = true;   
-            }else if(!/^[A-Za-z]{3,}$/.test(v1.trim())){
-                e1.innerText = "At least give me 3 chracter name";
-                hasError = true;
             }else{
                 e1.innerText = "";
             }
@@ -103,10 +100,6 @@
 
             let hasError = false;
 
-            if(!storeData){
-                e3.innerText = "Your email doesn't exists! Please go to login";
-                hasError = true;
-            }
             if(v1 === ""){
                 e1.innerText = "Fill email";
                 hasError = true;
@@ -115,7 +108,7 @@
                 hasError = true;
             }else{
                 e1.innerText = "";
-            }
+            }            
 
             if(v1 === ""){
                 e2.innerText = "Fill password";
@@ -245,9 +238,24 @@
                 storeData.password = v1;
                 storeData.cpassword = v2;
                 localStorage.setItem("User",JSON.stringify(storeData))
-                alert("Your passed changed");
+                alert("Your password changed successfully");
                 window.location.href = "index.html";
-            }
+            }            
+        }
 
-            
+        //drop down in header
+
+        let v1 = document.getElementById("show");
+        let v2 = document.getElementById("drop-down");
+        v1.onclick = () =>{
+            v1.classList.toggle(v2.style.display = "block")
+        }
+        document.onclick = function (e){
+            let target = e.target;
+            if(!target.closest('.header')){
+                v1.classList.remove(v2.style.display = "none")
+            }
+        }
+        window.onscroll = ()=>{
+            v2.classList.remove('show')
         }
