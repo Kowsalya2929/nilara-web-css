@@ -243,19 +243,4 @@
             }            
         }
 
-        //drop down in header
-
-        let v1 = document.getElementById("show");
-        let v2 = document.getElementById("drop-down");
-        v1.onclick = () =>{
-            v1.classList.toggle(v2.style.display = "block")
-        }
-        document.onclick = function (e){
-            let target = e.target;
-            if(!target.closest('.header')){
-                v1.classList.remove(v2.style.display = "none")
-            }
-        }
-        window.onscroll = ()=>{
-            v2.classList.remove('show')
-        }
+        
