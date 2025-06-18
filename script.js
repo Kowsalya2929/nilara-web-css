@@ -269,12 +269,11 @@
 
             emailjs.send("service_tjmnu5p","template_qb31lpc",template_params)
             .then((res)=>{
-                console.log(res)
                 alert("Your Message sended successfully! "  + v1)
-                v1.innerText = "";
-                v2.innerText = "";
-                v3.innerText = "";
-                v4.innerText = "";
+                document.getElementById("cname").value = ""; 
+                document.getElementById("cemail").value = "";
+                document.getElementById("ctitle").value = "";
+                document.getElementById("cmsg").value = "";
             }).catch((err) => {
                 alert("Failed to send email" + JSON.stringify(err))
             });
@@ -296,6 +295,8 @@
 
             let currData = localStorage.setItem("User",JSON.stringify(storedData))
             console.log(currData)
+
+            alert("Logged out successfully! Please go to SignUp")
         }
 
 

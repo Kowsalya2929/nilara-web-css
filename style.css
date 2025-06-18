@@ -123,6 +123,8 @@ div.i {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    position: relative;
+    left: 70px;
 }
 
 .menu a {
@@ -157,10 +159,21 @@ div.i {
 .icons {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .mbl_menu i:hover, .logo a:hover , .icons i:hover{
     color: palevioletred;
+}
+
+.menu_mbl{
+    display: none;
+}
+
+.menu_mbl a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
 .drop{
@@ -168,7 +181,7 @@ div.i {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-    background-color: rgb(247, 194, 203);
+    background: linear-gradient(to bottom,pink,white);
     position: absolute;
     top: 80px;
     right: 30px;
@@ -184,6 +197,18 @@ div.i {
     padding: 15px;
     display: block;
 }
+
+
+#search_box input{
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    right: -40px;
+    background-color: rgb(254, 205, 213);
+    border: none;
+    outline: 0;
+}
+
 
 /* home */
 
@@ -1336,7 +1361,32 @@ footer {
         top: 80px;
         right: 80px;
     }
+    .menu_mbl{
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom,pink,white);
+        padding: 20px;
+        font-size: medium;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
 
+    #cross{
+        display: none;
+    }
+    #active{
+        display: block;
+    }
+    .menu_mbl {
+        display: none;
+    }
+    #search_box {
+        display: none;
+    }
     /* home */
 
     .l1 img, .l2 img, .l3 img, .l4 img, .l5 img {
@@ -1614,7 +1664,31 @@ footer {
     .drop{
         position: absolute;
         top: 80px;
-        right: 305px;
+        right: 205px;
+    }
+
+    .menu_mbl{
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom,pink,white);
+        padding: 20px;
+        font-size: medium;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: none;
+    }
+    #cross{
+        display: none;
+    }
+    #active{
+        display: block;
+    }
+    #search_box input {
+        display: block;
     }
 
     /* home */
@@ -1761,13 +1835,27 @@ footer {
     }
     
     .menu {
-        display: none;
+        display: flex;
+        position: relative;
+        left: 0;
     }
 
     .drop{
         position: absolute;
         top: 80px;
         right: 435px;
+    }
+
+    .menu_mbl{
+        display: none;
+    }
+
+    .mbl_menu{
+        display: none;
+    }
+    
+    #search_box input{
+        display: none;
     }
 
     /* home */
@@ -1875,6 +1963,10 @@ footer {
         position: absolute;
         top: 80px;
         right: 35px;
+    }
+
+    #search_box input{
+        display: block;
     }
 
 }
