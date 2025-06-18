@@ -6,6 +6,13 @@
     <title>Nilara Web Application - Privacy Policy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("XYAhGFdKGYXsUZUkx"); 
+        })();
+    </script>
+    <script src="./script.js"></script>
 </head>
 <body>
 
@@ -69,11 +76,11 @@
         <div class="contact_page">
             <div class="contact11">
                 <h2>Have a question?</h2>
-                <form action="" >
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email*">
-                    <input type="number" placeholder="Phone Number">
-                    <textarea name="" placeholder="Have a Question? We Will Answer!*" id="" rows="5"></textarea>
+                <form onsubmit="QuesAns(event)" >
+                    <input id="cname" type="text" placeholder="Full Name">
+                    <input id="cemail" type="email" placeholder="Email*">
+                    <input id="ctitle" type="text" placeholder="Subject">
+                    <textarea id="cmsg" placeholder="Have a Question? We Will Answer!*" id="" rows="5"></textarea>
                     <div class="btns">
                         <button type="submit">Submit</button> 
                         <button type="reset">Undo</button>

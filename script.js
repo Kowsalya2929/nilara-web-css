@@ -243,4 +243,35 @@
             }            
         }
 
+        //contact us
+
+        function QuesAns(event){
+
+            event.preventDefault();
+
+            let v1 = document.getElementById("cname").value;
+            let v2 = document.getElementById("cemail").value;
+            let v3 = document.getElementById("ctitle").value;
+            let v4 = document.getElementById("cmsg").value;
+
+            const template_params = {
+                title: v3,
+                name: v1,
+                message: v4,
+                email: v2,
+            }
+
+            emailjs.send("service_tjmnu5p","template_qb31lpc",template_params)
+            .then((res)=>{
+                console.log(res)
+                alert("Your Message sended successfully! "  + v1)
+                v1.innerText = "";
+                v2.innerText = "";
+                v3.innerText = "";
+                v4.innerText = "";
+            }).catch((err) => {
+                alert("Failed to send email" + JSON.stringify(err))
+            });
+        }
+
         

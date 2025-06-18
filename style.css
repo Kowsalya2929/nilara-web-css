@@ -1331,6 +1331,11 @@ footer {
     .menu {
         display: none;
     }
+    .drop{
+        position: absolute;
+        top: 80px;
+        right: 80px;
+    }
 
     /* home */
 
@@ -1574,6 +1579,26 @@ footer {
     
 }
 
+@media (min-width:321px) and (min-width:375px){
+    /* header */
+
+    .drop{
+        position: absolute;
+        top: 80px;
+        right: 110px;
+    }
+}
+
+@media (min-width:376px) and (max-width:426px){
+    /* header */
+
+    .drop{
+        position: absolute;
+        top: 80px;
+        right: 135px;
+    }
+}
+
 @media (min-width:601px) and (max-width:770px) {
 
     /* header */
@@ -1584,6 +1609,12 @@ footer {
     
     .menu {
         display: none;
+    }
+
+    .drop{
+        position: absolute;
+        top: 80px;
+        right: 305px;
     }
 
     /* home */
@@ -1733,6 +1764,12 @@ footer {
         display: none;
     }
 
+    .drop{
+        position: absolute;
+        top: 80px;
+        right: 435px;
+    }
+
     /* home */
 
     .img_bg img {
@@ -1820,4 +1857,24 @@ footer {
         justify-content: space-between;
         gap: 20px;
     }
+}
+
+@media (min-width:1026px) and (max-width:1440px){
+
+    .drop{
+        position: absolute;
+        top: 80px;
+        right: 35px;
+    }
+
+}
+
+@media (min-width:1441px) and (max-width:2560px){
+
+    .drop{
+        position: absolute;
+        top: 80px;
+        right: 35px;
+    }
+
 }

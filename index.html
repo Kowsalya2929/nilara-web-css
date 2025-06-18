@@ -6,6 +6,13 @@
     <title>Nilara Web Application</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("XYAhGFdKGYXsUZUkx"); 
+        })();
+    </script>
+    <script src="./script.js"></script>
 </head>
 <body>
 
@@ -1508,7 +1515,7 @@
                 <form onsubmit="QuesAns(event)" >
                     <input id="cname" type="text" placeholder="Full Name">
                     <input id="cemail" type="email" placeholder="Email*">
-                    <input id="cphone" type="number" placeholder="Phone Number">
+                    <input id="ctitle" type="text" placeholder="Subject">
                     <textarea id="cmsg" placeholder="Have a Question? We Will Answer!*" id="" rows="5"></textarea>
                     <div class="btns">
                         <button type="submit">Submit</button> 
@@ -1570,19 +1577,6 @@
     </footer>
 
     <script>
-        function QuesAns(event){
-
-            event.preventDefault();
-
-            let v1 = document.getElementById("cname").value;
-            let v2 = document.getElementById("cemail").value;
-            let v3 = document.getElementById("cphone").value;
-            let v4 = document.getElementById("cmsg").value;
-
-            
-
-            
-        }
 
         //drop down in header
 
